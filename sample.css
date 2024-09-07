@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: Arial, sans-serif;     文字の設定 */
+    display: flex;
+    flex-direction: column;       /* 並べる方向は：column(縦) */
+    align-items: center;          /* 横方向：中央揃え */
+    justify-content: flex-start;  /* 縦方向：上揃え) */
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto; /* フッターを下部に固定 */
+}
+
+.content {
+    width: 100%;
+    max-width: 400px; /* 中央揃えにするための幅制限 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px; /* 各領域の間にスペースを追加 */
+    padding: 5;
+}
+
+.section {
+    width: 100%;
+    align-items: center;      /* 縦方向の中央揃え */
+    justify-content: center;  /* 横方向の中央揃え */
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+/* ドクロと太陽のセクション */
+.sun-section {
+    display: flex;
+    height: 90px;
+    gap: 20px;
+}
+.image-posision-scaleton{
+    position: absolute;       /* 絶対位置指定 */
+    left: 50px;
+    top: 170px;
+}
+.image-position-sunpower{
+    position: relative;       /* 相対位置指定 */
+}
+
+
+/* タワーと家と車のセクション */
+.home-section {
+    display: flex;
+    gap: 20px;
+}
+
+.image-section img {
+    object-fit: cover;        /* よくわかんない */
+}
+
+
+/* 画像サイズ */
+.drivemode-size{
+    width: 60px;
+    height: auto;
+}
+.plase-icon-size{
+    width: 50px;
+    height: auto;
+}
